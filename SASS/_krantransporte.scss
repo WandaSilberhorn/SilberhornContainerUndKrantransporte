@@ -1,0 +1,55 @@
+@use 'global' as *;
+
+.krantransporte{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 2vw;
+
+        .icons{
+            margin-top: 4vw;
+
+            .icon{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 10vw;
+
+                img{
+                   width: 5vw;
+                }
+                p{
+                    font-size: 1em;
+                    width: 15vw;
+                }
+            }
+        }
+            
+}
+.kran{
+    height: auto;
+        .kranbild{
+        display: block;
+        overflow: hidden;
+        width: 100vw;
+        height: 82vh;
+        object-fit: cover;
+    }
+}
+
+.kaufen{
+    h2{
+        margin-bottom: 0;
+    }
+    h3{
+        margin-bottom: 1em;
+    }
+
+    .icons{
+        width: 80vw;
+        h3{
+            margin-bottom: 0;
+        }
+    }
+}

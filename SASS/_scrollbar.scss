@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+/* Breite der Scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Für vertikale Scrollbars */
+    height: 8px; /* Für horizontale Scrollbars */
+}
+
+/* Hintergrund der Scrollleiste */
+::-webkit-scrollbar-track {
+    background: #fffef5;
+    border-radius: 10px;
+}
+
+/* Scrollbalken selbst */
+::-webkit-scrollbar-thumb {
+    background: $primary-color;
+    border-radius: 10px;
+}
+
+/* Scrollbalken beim Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0040ff;
+}
+
+
+
+
+
+.scrollbar{
+    position: fixed;
+    z-index: 20000;
+    right: 0;
+    top: 0;
+    width: 3vw;
+    height: 4vw;
+    transform: rotate(180deg);
+    transform: scaleY(-1);
+    margin-top: .5vw;;
+}

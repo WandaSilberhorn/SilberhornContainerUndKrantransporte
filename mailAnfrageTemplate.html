@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Neue Anfrage über die Website</title>
+</head>
+<body style="margin:0; padding:0; font-family: Helvetica, Arial, sans-serif; background-color: #f4f4f4;">
+
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="background: white; border: 2px solid #151E2B; padding: 20px;">
+
+                    <!-- Header mit Logo & Button -->
+                    <tr>
+                        <td align="left" style="padding: 10px;">
+                            <img src="assets/logo/Logo GmbH_Schwarz.png" alt="Firmenlogo" width="150">
+                        </td>
+                        <td align="right">
+                            <a href="https://www.silberhorn-krantransporte.de" style="background: #151E2B; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 14px; display: inline-block;">Zur Website</a>
+                        </td>
+                    </tr>
+
+                    <!-- Überschrift -->
+                    <tr>
+                        <td colspan="2" align="center">
+                            <h2 style="color: #151E2B;">Neue Anfrage über die Website</h2>
+                        </td>
+                    </tr>
+
+                    <!-- Einleitung -->
+                    <tr>
+                        <td colspan="2" style="padding: 10px 20px; font-size: 16px; line-height: 1.5; color: #333;">
+                            <p>Eine neue Anfrage wurde über die Website gestellt. Hier sind alle Informationen nochmal zusammengetragen:</p>
+                        </td>
+                    </tr>
+
+                    <!-- Kontaktdetails -->
+                    <tr>
+                        <td colspan="2" style="padding: 10px 20px; font-size: 16px; line-height: 1.5; color: #333;">
+                            <p><strong>Name:</strong> {{name}}</p>
+                            <p><strong>E-Mail:</strong> <a href="mailto:{{email}}" style="color: #151E2B;">{{email}}</a></p>
+                            <p><strong>Telefonnummer:</strong> {{telefonnummer}}</p>
+                        </td>
+                    </tr>
+
+                    <!-- Betreff (Hervorgehoben) -->
+                    <tr>
+                        <td colspan="2" style="padding: 15px; background-color: #f8f8f8; border-left: 4px solid #151E2B;">
+                            <p style="font-size: 18px; font-weight: bold; color: #151E2B;">Betreff:</p>
+                            <p>{{betreff}}</p>
+                        </td>
+                    </tr>
+
+                    <!-- Nachricht (Hervorgehoben) -->
+                    <tr>
+                        <td colspan="2" style="padding: 15px; background-color: #f8f8f8; border-left: 4px solid #151E2B;">
+                            <p style="font-size: 18px; font-weight: bold; color: #151E2B;">Nachricht des Kunden:</p>
+                            <p style="font-style: italic;">{{message}}</p>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td colspan="2" align="center" style="background-color: #151E2B; color: white; font-size: 12px; padding: 15px;">
+                            <p>Diese Nachricht wurde automatisch generiert.</p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

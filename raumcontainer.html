@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="dist/main.css" />
+    <title>Raumcontainer</title>
+  </head>
+  <body data-page="container-mieten">
+    <div id="header-placeholder"></div>
+    <!-- eigentlicher Inhalt der Seite -->
+    <div class="inhalt">
+      <div class="headerAddon">Raum</div>
+      <div class="back">
+        <a href="container-mieten.html" data-page="container-mieten">
+          <img src="assets/icons/linker-pfeil.png" alt="pfeil" class="pfeil" />
+        </a>
+      </div>
+      <h2>Raumcontainer</h2>
+      <p>
+        Unsere Raumcontainer bieten vielseitige Nutzungsmöglichkeiten – ob als
+        mobiles Büro, Aufenthaltsraum oder Lagerfläche. Alle Container sind mit
+        Strom ausgestattet und können nach Bedarf mit praktischem Zubehör
+        ergänzt werden, darunter Heizungen, Kühlschränke, Regale und mehr. So
+        schaffen Sie schnell und unkompliziert funktionale Räume, die genau auf
+        Ihre Anforderungen zugeschnitten sind.
+      </p>
+
+      <div class="sidemenu">
+        <ul>
+          <li><a href="#buero" class="nav-link">Büro</a></li>
+          <li><a href="#zubehoer" class="nav-link">Zubehör</a></li>
+        </ul>
+      </div>
+
+      <!-- Popup Bilderansicht -->
+      <div id="modal">
+        <div class="modal-bilderkarussel">
+          <img
+            src="assets/icons/close.svg"
+            alt="close"
+            class="close"
+            onclick="closeModal()"
+          />
+          <div class="modal-slider">
+            <img
+              src="assets/bilder/beispiel.jpg"
+              alt="beispiel"
+              class="modal-slide active"
+            />
+            <img
+              src="assets/bilder/beispiel2.jpg"
+              alt="beispiel"
+              class="modal-slide"
+            />
+            <img
+              src="assets/bilder/beispiel3.jpg"
+              alt="beispiel"
+              class="modal-slide"
+            />
+          </div>
+          <div class="modal-buttons">
+            <button class="modal-btn active" data-index="0"></button>
+            <button class="modal-btn" data-index="1"></button>
+            <button class="modal-btn" data-index="2"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-------------Section Büro---------------------------------------------------------------------------------------->
+      <section id="buero" class="section">
+        <div class="produkt Buero">
+          <div class="bilderkarussel">
+            <div class="slider">
+              <img
+                src="assets/bilder/beispiel.jpg"
+                alt="beispiel"
+                class="slide active"
+                onclick="openModal()"
+              />
+              <img
+                src="assets/bilder/beispiel2.jpg"
+                alt="beispiel"
+                class="slide"
+                onclick="openModal()"
+              />
+              <img
+                src="assets/bilder/beispiel3.jpg"
+                alt="beispiel"
+                class="slide"
+                onclick="openModal()"
+              />
+            </div>
+            <div class="buttons">
+              <button class="btn active" data-index="0"></button>
+              <button class="btn" data-index="1"></button>
+              <button class="btn" data-index="2"></button>
+            </div>
+          </div>
+
+          <div class="text">
+            <h3>Büro-Container</h3>
+            <a
+              href="assets/datenblatt/Datenblatt zum Download.pdf"
+              download="container1.pdf"
+            >
+              <img src="assets/icons/file.svg" alt="file" class="file"
+            /></a>
+            <p>
+               Ausstattung nach Bedarf
+            </p>
+            <p>
+              Technische Daten: <br />
+              ...
+            </p>
+            <p>
+            Unsere Bürocontainer bieten eine flexible und sofort 
+            einsatzbereite Lösung für mobile Arbeitsräume. 
+            Dank Stromanschluss und optionaler Ausstattung wie 
+            Heizung, Klimagerät, Regale oder Kühlschrank schaffen 
+            sie eine komfortable und funktionale Arbeitsumgebung.
+            </p>
+          </div>
+        </div>
+      </section>
+     
+      <!-------------Section Zubehoer---------------------------------------------------------------------------------------->
+      <section id="zubehoer" class="section">
+        <hr class="trennerlinie" />
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <div class="produkt grundversorgung">
+          <div class="bilderkarussel">
+            <div class="slider">
+              <img
+                src="assets/bilder/Buerocontainer - 2.jpg"
+                alt="beispiel"
+                class="slide active"
+                onclick="openModal()"
+              />
+              <img
+                src="assets/bilder/Buerocontainer - 2.jpg"
+                alt="beispiel"
+                class="slide"
+                onclick="openModal()"
+              />
+              <img
+                src="assets/bilder/Buerocontainer - 2.jpg"
+                alt="beispiel"
+                class="slide"
+                onclick="openModal()"
+              />
+            </div>
+            <div class="buttons">
+              <button class="btn active" data-index="0"></button>
+              <button class="btn" data-index="1"></button>
+              <button class="btn" data-index="2"></button>
+            </div>
+          </div>
+
+          <div class="text">
+            <h3>Noch ein Produkt</h3>
+            <a
+              href="assets/datenblatt/Datenblatt zum Download.pdf"
+              download="container1.pdf"
+            >
+              <img src="assets/icons/file.svg" alt="file" class="file"
+            /></a>
+            <p>
+              ...
+            </p>
+            <p>
+              Technische Daten: <br />
+              ...
+            </p>
+            <p>
+              BLAAAUnsere gemischten WC-Container bieten eine flexible und
+              platzsparende Sanitärlösung für Veranstaltungen und Baustellen.
+              Diese Container sind so ausgestattet, dass sie sowohl Damen als
+              auch Herren eine komfortable und hygienische Nutzung ermöglichen.
+              Mit modernen Standards und optionaler Erstausstattung sorgen wir
+              dafür, dass Ihre Gäste und Mitarbeiter sich jederzeit wohlfühlen
+            </p>
+          </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <div class="produkt grundversorgung">
+          <div class="bilderkarussel">
+            <div class="slider">
+              <img
+                src="assets/bilder/Buerocontainer - 2.jpg"
+                alt="beispiel"
+                class="slide active"
+                onclick="openModal()"
+              />
+              <img
+                src="assets/bilder/Buerocontainer - 2.jpg"
+                alt="beispiel"
+                class="slide"
+                onclick="openModal()"
+              />
+              <img
+                src="assets/bilder/Buerocontainer - 2.jpg"
+                alt="beispiel"
+                class="slide"
+                onclick="openModal()"
+              />
+            </div>
+            <div class="buttons">
+              <button class="btn active" data-index="0"></button>
+              <button class="btn" data-index="1"></button>
+              <button class="btn" data-index="2"></button>
+            </div>
+          </div>
+
+          <div class="text">
+            <h3>Noch ein Produkt</h3>
+            <a
+              href="assets/datenblatt/Datenblatt zum Download.pdf"
+              download="container1.pdf"
+            >
+              <img src="assets/icons/file.svg" alt="file" class="file"
+            /></a>
+            <p>
+              ...
+            </p>
+            <p>
+              Technische Daten: <br />
+              ...
+            </p>
+            <p>
+              ....Unsere gemischten WC-Container bieten eine flexible und
+              platzsparende Sanitärlösung für Veranstaltungen und Baustellen.
+              Diese Container sind so ausgestattet, dass sie sowohl Damen als
+              auch Herren eine komfortable und hygienische Nutzung ermöglichen.
+              Mit modernen Standards und optionaler Erstausstattung sorgen wir
+              dafür, dass Ihre Gäste und Mitarbeiter sich jederzeit wohlfühlen
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <button class="angebot">
+      <a href="contact.html" data-page="contact">Angebot einholen</a>
+    </button>
+    <div id="footer-placeholder"></div>
+  </body>
+</html>

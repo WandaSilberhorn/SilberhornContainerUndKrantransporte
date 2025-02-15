@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="dist/main.css">
+    <title>Container Mieten</title>
+</head>
+<body data-page="contact">
+    <div id="header-placeholder"></div>
+    <div class="inhalt kontaktformular">
+        <div class="kontakt">
+            <h2>Kontakt</h2>
+            <p>Haben Sie Fragen oder wissen <br>
+                noch nicht genau, was Sie brauchen? <br>
+                Rufen Sie uns gerne an.
+            </p>
+            <p>
+                Telefon: 09404 2088 <br>
+                Mobil: 0170 58 55 985 <br>
+                Fax: 09404 5423 <br>
+                Mail: info@silberhorn-krantransporte.de
+            </p>
+            <p>
+                Silberhorn Container-Krantransporte GmbH <br>
+                An der Werkleiten 1, Ortsteil Undorf <br>
+                93152 Nittendorf
+            </p>
+        </div>
+        <div class="formular">
+            <h2>Schreiben Sie uns Ihr Anliegen</h2>
+            <form id="contactForm" action="email.php" method="POST">
+                <div class="formLeft">
+                    <label for="betreff">Betreff*</label>
+                    <input type="text" id="betreff" name="betreff">
+                    <label for="message">Ihre Nachricht*</label>
+                    <textarea name="message" id="message" rows="10" cols="40"></textarea>
+                </div>
+                
+                <div class="formRight">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Emailaddresse*</label>
+                    <input type="text" id="email" name="email">
+                    <label for="telefonnummer">Telefonnummer</label>
+                    <input type="text" id="telefonnummer" name="telefonnummer">
+                    <input type="submit" value="Anfrage abschicken">
+                </div>
+            </form>
+
+        </div>
+        
+    </div>
+
+
+
+    <div id="footer-placeholder"></div>
+</body>
+</html>

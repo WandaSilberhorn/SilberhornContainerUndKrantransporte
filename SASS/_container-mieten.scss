@@ -1,0 +1,63 @@
+@use 'global' as *;
+
+
+.ButtonWrapperContainer {
+    margin-top: 3em;
+    position: relative;
+}
+
+.ButtonWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+}
+
+.Schatten {
+    position: absolute;
+    top: 0; /* Exakt überlagern */
+    left: 0;
+    width: 100%; /* Gleiche Breite wie der Container */
+    height: 100%; /* Gleiche Hhe wie der Container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em; /* Gleicher Abstand wie im ButtonWrapper */
+    z-index: -1; /* Hinter den eigentlichen Buttons */
+}
+
+.ButtonWrapper .button, .Schatten .button {
+    width: 26vw;
+    height: 15vw;
+    transition: transform 0.3s ease;
+}
+
+.ButtonWrapper .button {
+    background-color: $primary-color;
+    transform: translate(0, 0); /* Standardposition */
+    p{
+        color: $background-color;
+        font-weight: 700;
+        font-size: 1.2vw;
+        padding-left: 2vw;
+    }
+}
+
+.ButtonWrapper .button:hover {
+    transform: translate(-.5em, -.5em); /* Bewegung nach oben links */
+}
+
+.Schatten .button {
+    background-color: $background-color;
+    //box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Effektiver Schatten */
+    transform: translate(0, 0); /* Bleibt fixiert */
+    border: .12em solid $primary-color; 
+}
+
+.Icon{
+    width: 6vw;
+    padding-left: 2vw;
+    padding-top: 1.5vw;
+    margin-bottom: .5vw;;
+}

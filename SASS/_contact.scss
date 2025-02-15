@@ -1,0 +1,114 @@
+@use 'global' as *;
+
+.kontaktformular{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    align-items: baseline;
+    margin-top: 10vw;
+}
+
+.kontakt{
+    position: relative;
+    margin-left: 6vw;
+    width: 23vw;
+    h2{
+        margin-bottom: 1vw;
+    }
+    p{
+        font-size: .9vw;
+        padding-bottom: .9vw;
+        width: 100%;
+    }
+}
+
+.formular{
+    width: 60vw;
+    margin-top: 2vw;
+
+    form{
+        display: flex;
+        justify-content:space-between;
+        gap: 3vw;
+
+        .formLeft{
+            width: 40vw;
+        }
+
+        .formRight{
+            width: 15vw;
+        }
+        label {
+            padding-left: 1vw;
+            font-weight: 500;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: .5vw 1.1vw;
+            box-sizing: border-box;
+            border: .20em solid $primary-color;
+            margin-bottom: 1vw;
+            margin-top: .3vw;
+            outline: none;
+
+            &:focus{
+                border: 2px solid $secondary-color;
+            }
+        }
+        input{
+            border-radius: 5vw;
+        }
+        textarea{
+            border-radius: 1.5vw;
+            height: 30vh;
+            resize: none;
+        }
+        
+        input[type=submit]{
+            position: absolute;
+            left: 82%;
+            bottom: 0vw;
+            width: 17vw;
+            font-family: Helvetica Neue;
+            font-size: 1.5em;
+            font-weight: 500;
+            white-space: nowrap;
+            background-color: $primary-color;
+            padding: .4em 1em;
+            margin-bottom: 1.5em;
+            border: .12em solid $primary-color; 
+            border-radius: 5em; 
+            color: $background-color;
+            text-align: center;
+            text-decoration: none;
+            transform: translateY(0em);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            
+                &:hover{
+                    transform: translateY(-.7em);
+                }
+        }
+    }
+}
+
+#feedback{
+    font-size: 1em;
+    font-style: italic;
+    color: $secondary-color;
+    padding-left: 1vw;
+    width: 20vw;
+}
+
+.formLeft label{
+    display: flex;
+}
+
+
+.fehler, .erfolg{
+    margin-top: 2vw;;
+    p{
+        width: 100%;;
+    }
+}

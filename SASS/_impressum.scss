@@ -1,0 +1,48 @@
+@use 'global' as *;
+
+.footer-inhalt{
+    align-items: normal;
+    p{
+        width: 100%;
+    }
+}
+
+.impressum-text {
+    padding-top: 2em;;
+    width: 50vw;
+    position: relative;
+    left: 25%;
+
+    p {
+        padding-bottom: 1em;
+        font-size: 1.1vw;
+
+        a{
+            text-decoration: none;
+            color: black;
+        } 
+    }
+}
+
+.rechtliches {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .linie {
+        width: 60%;
+        height: .21em;
+        background-color: $primary-color;
+    }
+
+    .rechtliches-text{
+        margin-top: 3em;
+        width: 50vw;
+
+        p {
+            font-size: 1.1vw;
+            padding-bottom: 1em;
+        }
+    }
+}

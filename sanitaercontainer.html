@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="dist/main.css">
+    <title>Sanitaercontainer</title>
+</head>
+<body data-page="container-mieten">
+    <!-- Headerelement -->
+    <div id="header-placeholder"></div>
+
+     <!-- eigentlicher Inhalt der Seite -->
+        <div class="inhalt">
+            <div class="headerAddon">Sanitär</div>
+            <div class="back">
+                <a href="container-mieten.html" data-page="container-mieten">
+                    <img src="assets/icons/linker-pfeil.png" alt="pfeil" class="pfeil">
+                </a>
+            </div>
+            <h2>Sanitärcontainer</h2>
+            <p>Unsere Sanitärcontainer bieten maßgeschneiderte Lösungen für jede Veranstaltung und Baustelle. 
+                Wählen Sie aus Damen- und Herrencontainern, kombinierten WC-Einheiten und behinderten-gerechten 
+                Sanitäranlagen. Für höchste Hygienestandards stellen wir außerdem moderne Schwarz-Weiß-Anlagen 
+                zur Verfügung. Egal, was Sie benötigen – wir sorgen für die passende, komfortable Ausstattung.</p>
+        
+        
+            <div class="sidemenu">
+                <ul>
+                    <li><a href="#wc" class="nav-link">Wc</a></li>
+                    <li><a href="#dusche" class="nav-link">Dusche</a></li>
+                    <li><a href="#sw" class="nav-link">SW-Anlage</a></li>
+                    <li><a href="#zubehoer" class="nav-link">Zubehör</a></li>
+                </ul>
+            </div>
+
+             <!-- Popup Bilderansicht -->
+        <div id="modal">  
+             <div class="modal-bilderkarussel">
+                <img src="assets/icons/close.svg" alt="close" class="close">
+                <div class="modal-slider">
+                <img src="assets/bilder/beispiel.jpg" alt="beispiel" class="modal-slide active">
+                <img src="assets/bilder/beispiel2.jpg" alt="beispiel" class="modal-slide">
+                <img src="assets/bilder/beispiel3.jpg" alt="beispiel" class="modal-slide">
+                </div>
+                <div class="modal-buttons">
+                    <button class="modal-btn active" data-index="0"></button>
+                    <button class="modal-btn" data-index="1"></button>
+                    <button class="modal-btn" data-index="2"></button>
+                </div>
+            </div>
+        </div>
+
+<!-------------Section WC---------------------------------------------------------------------------------------->
+            <section id="wc" class="section">
+                <div class="produkt damentoilette">
+                    <div class="bilderkarussel">
+                        <div class="slider">
+                        <img src="assets/bilder/beispiel.jpg" alt="beispiel" class="slide active">
+                        <img src="assets/bilder/beispiel2.jpg" alt="beispiel" class="slide">
+                        <img src="assets/bilder/beispiel3.jpg" alt="beispiel" class="slide">
+                        </div>
+                        <div class="buttons">
+                            <button class="btn active" data-index="0"></button>
+                            <button class="btn" data-index="1"></button>
+                            <button class="btn" data-index="2"></button>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h3>Damen Toilette</h3>
+                        <a href="assets/datenblatt/Datenblatt zum Download.pdf" download="container1.pdf"> <img src="assets/icons/file.svg" alt="file" class="file"></a>
+                        <p>8 Einzelkabinen <br>
+                            2 Waschbecken
+                        </p>
+                        <p>Technische Daten: <br>
+                            ...
+                        </p>
+                        <p>
+                            Unsere Damentoiletten-Container bieten eine gepflegte 
+                            und komfortable Ausstattung, die Ihren Besucherinnen 
+                            eine angenehme Nutzung garantiert. 
+                            Die sanitären Anlagen sind modern gestaltet und 
+                            erfüllen hohe Hygiene-Standards. Optional bieten wir 
+                            eine Erstausstattung mit Verbrauchsmaterialien an.
+                        </p>
+                    </div>
+                </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------>
+                    <div class="produkt herrentoilette">
+                        <div class="bilderkarussel">
+                            <div class="slider">
+                            <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide active">
+                            <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                            <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                            </div>
+                            <div class="buttons">
+                                <button class="btn active" data-index="0"></button>
+                                <button class="btn" data-index="1"></button>
+                                <button class="btn" data-index="2"></button>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h3>Toilette Herren</h3>
+                            <a href="assets/datenblatt/Datenblatt zum Download.pdf" download="container1.pdf"> <img src="assets/icons/file.svg" alt="file" class="file"></a>
+                            <p> 10 Urinale <br>
+                                2 Einzelkabinen <br>
+                                2 Waschbecken
+                            </p>
+                            <p>Technische Daten: <br>
+                                ...
+                            </p>
+                            <p>
+                                Unsere Herrentoiletten-Container sind optimal für 
+                                Veranstaltungen und Baustellen ausgestattet und 
+                                bieten eine saubere, funktionale Lösung für Ihre 
+                                Gäste und Mitarbeiter. Die sanitären Anlagen sind robust 
+                                und pflegeleicht gestaltet und erfüllen alle gängigen 
+                                Hygienestandards. Auf Wunsch sorgen wir für die 
+                                Erstausstattung mit Verbrauchsmaterialien.
+                            </p>
+                        </div>
+                    </div>
+<!------------------------------------------------------------------------------------------------------------------------------>
+                    <div class="produkt gemischt">
+                        <div class="bilderkarussel">
+                            <div class="slider">
+                            <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide active">
+                            <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                            <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                            </div>
+                            <div class="buttons">
+                                <button class="btn active" data-index="0"></button>
+                                <button class="btn" data-index="1"></button>
+                                <button class="btn" data-index="2"></button>
+                            </div>
+                        </div>
+    
+                        <div class="text">
+                            <h3>Gemischte Toilette</h3>
+                            <a href="assets/datenblatt/Datenblatt zum Download.pdf" download="container1.pdf"> <img src="assets/icons/file.svg" alt="file" class="file"></a>
+                            <p> Damen:<br>
+                                4 Einzelkabinen <br>
+                                2 Waschbecken <br>
+                                Herren:<br>
+                                2 Einzelkabinen<br>
+                                4 Urinale<br>
+                                1 Waschbecken
+                            </p>
+                            <p>Technische Daten: <br>
+                                ...
+                            </p>
+                            <p>
+                                Unsere gemischten WC-Container bieten eine flexible 
+                                und platzsparende Sanitärlösung für Veranstaltungen und 
+                                Baustellen. Diese Container sind so ausgestattet, dass sie 
+                                sowohl Damen als auch Herren eine komfortable und hygienische 
+                                Nutzung ermöglichen. Mit modernen Standards und optionaler 
+                                Erstausstattung sorgen wir dafür, dass Ihre Gäste und Mitarbeiter 
+                                sich jederzeit wohlfühlen
+                            </p>
+                        </div>
+                    </div>
+<!------------------------------------------------------------------------------------------------------------------------------>
+                    <div class="produkt behindertengerechtt">
+                        <div class="bilderkarussel">
+                            <div class="slider">
+                            <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide active">
+                            <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                            <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                            </div>
+                            <div class="buttons">
+                                <button class="btn active" data-index="0"></button>
+                                <button class="btn" data-index="1"></button>
+                                <button class="btn" data-index="2"></button>
+                            </div>
+                        </div>
+    
+                        <div class="text">
+                            <h3>Behindertengerechte Toilette</h3>
+                            <a href="assets/datenblatt/Datenblatt zum Download.pdf" download="container1.pdf"> <img src="assets/icons/file.svg" alt="file" class="file"></a>
+                            <p> 1 Einzelkabine <br>
+                                1 Waschbecken <br>
+                                1 Auffahrrampe
+                            </p>
+                            <p>Technische Daten: <br>
+                                ...
+                            </p>
+                            <p>
+                                Unsere behindertengerechten WC-Container sind speziell darauf 
+                                ausgelegt, allen Nutzern einen komfortablen und sicheren Zugang 
+                                zu bieten. Die großzügige Raumgestaltung ermöglicht die Nutzung 
+                                mit Rollstuhl und bietet Haltegriffe und weitere unterstützende Elemente 
+                                für eine einfache Handhabung. Damit schaffen wir eine barrierefreie 
+                                Sanitärlösung, die höchsten Ansprüchen an Komfort und Hygiene 
+                                gerecht wird – für uneingeschränkte Teilhabe bei jeder Veranstaltung 
+                                und jedem Einsatzort.
+                            </p>
+                        </div>
+                    </div>
+            </section>
+<!-------------Section Dusche---------------------------------------------------------------------------------------->
+            <section id="dusche" class="section">
+            <hr class="trennerlinie">
+<!------------------------------------------------------------------------------------------------------------------------------>
+                <div class="produkt dusche">
+                    <div class="bilderkarussel">
+                        <div class="slider">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide active">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                        </div>
+                        <div class="buttons">
+                            <button class="btn active" data-index="0"></button>
+                            <button class="btn" data-index="1"></button>
+                            <button class="btn" data-index="2"></button>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>Dusch/Toiletten Container</h3>
+                        <a href="assets/datenblatt/Datenblatt zum Download.pdf" download="container1.pdf"> <img src="assets/icons/file.svg" alt="file" class="file"></a>
+                        <p> 2 Duschkabinen <br>
+                            2 Toiletten <br>
+                            2 Urinale <br>
+                            5 Waschbecken
+
+                        </p>
+                        <p>Technische Daten: <br>
+                            Größe: 6m/2,5m/2,85m (L/B/H)
+                        </p>
+                        <p>
+                            Unser Dusch-/Toiletten-Container bietet eine moderne und hygienische Lösung 
+                            für den mobilen Einsatz. Ob auf Baustellen, Veranstaltungen oder temporären 
+                            Unterkünften – er vereint Duschen, WCs und Waschmöglichkeiten in einer 
+                            kompakten Einheit. Dank durchdachter Ausstattung und robuster Bauweise 
+                            sorgt er für maximalen Komfort und eine zuverlässige Nutzung, überall dort, 
+                            wo eine flexible Sanitärlösung benötigt wird.
+                        </p>
+                    </div>
+                </div>
+
+
+            </section>
+<!-------------Section SW-Anlage---------------------------------------------------------------------------------------->
+<section id="sw" class="section"> 
+<hr class="trennerlinie">
+<!------------------------------------------------------------------------------------------------------------------------------>
+                <div class="produkt sw">
+                    <div class="bilderkarussel">
+                        <div class="slider">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide active">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                        </div>
+                        <div class="buttons">
+                            <button class="btn active" data-index="0"></button>
+                            <button class="btn" data-index="1"></button>
+                            <button class="btn" data-index="2"></button>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>Schwarz-Weiß-Anlage</h3>
+                        <a href="assets/datenblatt/Datenblatt zum Download.pdf" download="container1.pdf"> <img src="assets/icons/file.svg" alt="file" class="file"></a>
+                        <p> 1 Duschkabine <br>
+                            1 Toilette <br>
+                            1 Waschbecken <br>
+                            2 Spindschränke
+                        </p>
+                        <p>Technische Daten: <br>
+                            Größe: 6m/2,5m/2,85m (L/B/H)
+                        </p>
+                        <p>
+                            Unsere Schwarz-Weiß-Anlage im Containerformat bietet die ideale Lösung 
+                            für Arbeitsbereiche mit hohen Hygienestandards. Durch die klare Trennung 
+                            von verschmutzter (schwarzer) und sauberer (weißer) Zone wird sichergestellt,
+                             dass Arbeitskleidung und persönliche Hygiene optimal voneinander getrennt bleiben. 
+                             Die Anlage ist speziell für Baustellen, industrielle Einsätze und andere 
+                             Arbeitsumgebungen konzipiert, in denen Sauberkeit und Sicherheit an erster 
+                             Stelle stehen. Praktisch, effizient und flexibel einsetzbar!
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+<!-------------Section Zubehoer---------------------------------------------------------------------------------------->
+<section id="zubehoer" class="section">
+<hr class="trennerlinie">
+<!------------------------------------------------------------------------------------------------------------------------------>
+                <div class="produkt grundversorgung">
+                    <div class="bilderkarussel">
+                        <div class="slider">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide active">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                        </div>
+                        <div class="buttons">
+                            <button class="btn active" data-index="0"></button>
+                            <button class="btn" data-index="1"></button>
+                            <button class="btn" data-index="2"></button>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>Grundausstattung</h3>
+                        <a href="assets/datenblatt/Datenblatt zum Download.pdf" download="container1.pdf"> <img src="assets/icons/file.svg" alt="file" class="file"></a>
+                        <p> 2 Duschkabinen <br>
+                            2 Toiletten <br>
+                            2 Urinale <br>
+                            5 Waschbecken
+
+                        </p>
+                        <p>Technische Daten: <br>
+                            Größe: 6m/2,5m/2,85m (L/B/H)
+                        </p>
+                        <p>
+                            Unsere gemischten WC-Container bieten eine flexible 
+                            und platzsparende Sanitärlösung für Veranstaltungen und 
+                            Baustellen. Diese Container sind so ausgestattet, dass sie 
+                            sowohl Damen als auch Herren eine komfortable und hygienische 
+                            Nutzung ermöglichen. Mit modernen Standards und optionaler 
+                            Erstausstattung sorgen wir dafür, dass Ihre Gäste und Mitarbeiter 
+                            sich jederzeit wohlfühlen
+                        </p>
+                    </div>
+                </div>
+<!------------------------------------------------------------------------------------------------------------------------------>
+                <div class="produkt grundversorgung">
+                    <div class="bilderkarussel">
+                        <div class="slider">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide active">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                        </div>
+                        <div class="buttons">
+                            <button class="btn active" data-index="0"></button>
+                            <button class="btn" data-index="1"></button>
+                            <button class="btn" data-index="2"></button>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>Noch ein Produkt</h3>
+                        <a href="assets/datenblatt/Datenblatt zum Download.pdf" download="container1.pdf"> <img src="assets/icons/file.svg" alt="file" class="file"></a>
+                        <p> 2 Duschkabinen <br>
+                            2 Toiletten <br>
+                            2 Urinale <br>
+                            5 Waschbecken
+
+                        </p>
+                        <p>Technische Daten: <br>
+                            Größe: 6m/2,5m/2,85m (L/B/H)
+                        </p>
+                        <p>
+                            Unsere gemischten WC-Container bieten eine flexible 
+                            und platzsparende Sanitärlösung für Veranstaltungen und 
+                            Baustellen. Diese Container sind so ausgestattet, dass sie 
+                            sowohl Damen als auch Herren eine komfortable und hygienische 
+                            Nutzung ermöglichen. Mit modernen Standards und optionaler 
+                            Erstausstattung sorgen wir dafür, dass Ihre Gäste und Mitarbeiter 
+                            sich jederzeit wohlfühlen
+                        </p>
+                    </div>
+                </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------>                
+                <div class="produkt grundversorgung">
+                    <div class="bilderkarussel">
+                        <div class="slider">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide active">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                        <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                        </div>
+                        <div class="buttons">
+                            <button class="btn active" data-index="0"></button>
+                            <button class="btn" data-index="1"></button>
+                            <button class="btn" data-index="2"></button>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h3>Noch ein Produkt</h3>
+                        <a href="assets/datenblatt/Datenblatt zum Download.pdf" download="container1.pdf"> <img src="assets/icons/file.svg" alt="file" class="file"></a>
+                        <p> 2 Duschkabinen <br>
+                            2 Toiletten <br>
+                            2 Urinale <br>
+                            5 Waschbecken
+
+                        </p>
+                        <p>Technische Daten: <br>
+                            Größe: 6m/2,5m/2,85m (L/B/H)
+                        </p>
+                        <p>
+                            Unsere gemischten WC-Container bieten eine flexible 
+                            und platzsparende Sanitärlösung für Veranstaltungen und 
+                            Baustellen. Diese Container sind so ausgestattet, dass sie 
+                            sowohl Damen als auch Herren eine komfortable und hygienische 
+                            Nutzung ermöglichen. Mit modernen Standards und optionaler 
+                            Erstausstattung sorgen wir dafür, dass Ihre Gäste und Mitarbeiter 
+                            sich jederzeit wohlfühlen
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+        <button class="angebot">
+            <a href="contact.html" data-page="contact">Angebot einholen</a>
+        </button>
+   
+    <div id="footer-placeholder"></div>
+</body>
+</html>

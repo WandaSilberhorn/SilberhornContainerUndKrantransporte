@@ -1,0 +1,262 @@
+@use 'global' as *;
+
+.headerAddon{
+    position: fixed;
+    left: 25.5vw;
+    padding: 0 1vw;
+    transform: translateY(-1vw);
+    z-index: 1000;
+    font-size: 1.2vw;
+    font-weight: 500;
+    background-color: rgb(2, 23, 255);
+    color: white;
+    border: .12em solid transparent; 
+    border-radius: 5em; 
+    text-align: center;
+}
+.sidemenu{
+    position: fixed;
+    right: 5%;
+    top: 15.5vw;
+
+       ul li{
+            font-weight: 400;
+            font-size: 1.2em;
+            text-decoration: none;
+            list-style: none;    
+            text-align: right;
+            
+            &:active{
+            font-weight: 700;
+            }
+        }
+        .nav-link.active{
+            font-weight: 700;
+            }
+    }
+
+.back{
+    position: fixed;
+    left: 5vw;
+    top: 15.5vw;
+    transform: translateX(0);
+    transition: all .3s ease;
+
+    .pfeil{
+        width: 2vw;
+    }
+
+    &:hover{
+        transform: translateX(-15%); 
+    }
+}
+
+.trennerlinie {
+    margin-left: 8vw;
+    margin-top: 5vw;;
+    width: 70%;
+    height: .33em;
+    background-color: $primary-color;
+}
+
+.produkt{
+    margin-left: 8vw;
+    display: flex;
+    width: 60%;
+    margin-top: 4vw;
+    //align-items: center;
+}
+
+section{
+    width: 100%;
+}
+
+#frischwassertank{
+    .produkt {
+        width: 80%;
+    }
+   ul{
+    margin-top: 0;
+    margin-bottom: 1vw;
+   }
+   li{
+    margin-left: 1.2vw;
+   }
+
+}
+
+.bilderkarussel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    .slider{
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        width: 30vw;
+        height: 22vw;
+
+        .slide{
+            width: 100%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transform: translateX(100%); /* Startposition rechts */
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        .slide.active {
+            opacity: 1; /* Sichtbar */
+            transform: translateX(0); /* Im sichtbaren Bereich */
+        }
+    }
+    
+    .buttons{
+        display: flex;
+        padding-top: 2vw;
+
+        .btn{
+            width: 3vw;
+            height: 1vw;
+            border: .18vw solid $primary-color; 
+            border-radius: 5em;
+            margin-right: .4vw;
+            background-color: $background-color;
+    
+            &.active,
+            &:hover{
+                background-color: $primary-color;
+                cursor: pointer;
+            }
+        }    
+    }
+    
+}
+
+#modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.807);
+
+    .modal-bilderkarussel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .close{
+            position: absolute;
+            right: 16vw;
+            width: 2vw;
+            height: 2vw;
+            z-index: 10001;
+            margin: .5vw;
+            transform: translate(0,0);
+            transition: all .3s ease;
+
+            &:hover{
+                transform: translate(20%, 0); 
+                cursor: pointer;
+            }
+        }
+
+        .modal-slider{
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            width: 70vw;
+            height: 75vh;
+
+            .modal-slide{
+                width: 100%;
+                transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transform: translateX(100%); /* Startposition rechts */
+            }
+
+            .modal-slide.active {
+                opacity: 1; /* Sichtbar */
+                transform: translateX(0); /* Im sichtbaren Bereich */
+            }
+        }
+        
+        .modal-buttons{
+            display: flex;
+            padding-top: 2vw;
+
+            .modal-btn{
+                width: 3vw;
+                height: 1vw;
+                border: .18vw solid $primary-color; 
+                border-radius: 5em;
+                margin-right: .4vw;
+                background-color: $background-color;
+        
+                &.active,
+                &:hover{
+                    background-color: $primary-color;
+                    cursor: pointer;
+                }
+            }    
+        }
+        
+    }
+}
+
+.tooltip{
+    position: absolute;
+    color: rgb(0, 4, 255);
+    opacity: 1;
+    font-style: italic; 
+}
+
+.text{
+    padding-left: 3vw;;
+    h3{
+        font-size: 1.3vw;;
+    }
+    .file{
+        padding-left: .3vw;
+        transform: translateX(0);
+        width: 2.1vw;
+        transition: transform .3s ease-in;
+        &:hover{
+            transform: translateX(.4vw);
+        }
+    }
+
+    a{
+        transform: translateX(0);
+        transition: transform 0.5s ease-in-out;
+
+        &:hover{
+            transform: translateX(20%);
+        }
+    }
+    p{
+        width:100%;
+        margin-top: 1.3vw ;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sidemenu, .back {
+        position: absolute;
+    }
+}

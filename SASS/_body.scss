@@ -1,0 +1,98 @@
+@use 'global' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1vw; 
+    line-height: 1.5;
+    color: $text-color;
+    background-color: $background-color;
+    /*Glaettung der Schrift im Browser verhindern*/
+    -webkit-font-smoothing: antialiased; /* Glaettet die Schrift for WebKit-Browser */
+    -moz-osx-font-smoothing: grayscale; /* Verwendet Graustufen-Glaettung for Firefox */
+    font-smooth: auto; /* Standard-Schriftglaettung for andere Browser */
+}
+
+h1 {
+    font-size: 2.4vw;
+    padding-left: 6vw;
+    padding-top: 3vw;
+}
+
+h2 {
+    font-size: 2vw;
+    padding-top: 2vw;
+}
+
+.footer-inhalt {
+    margin-top: 12vw; 
+    margin-bottom: 3vw;
+}
+
+.inhalt {
+    flex: 1;
+    position: relative;
+    margin-top: 12vw; 
+   // margin-bottom: 3vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+            h2 {
+                margin-bottom: 1em;
+            }
+    
+            p {
+                width: 50%;
+                font-size: 1.1vw;
+            }
+}
+
+a{
+     text-decoration: none;
+     color: $primary-color;
+}
+
+.angebot {
+    z-index: 500;
+    position: sticky;
+    width: 16vw;
+    left: 82%;
+    bottom: 2vw;
+    font-family: Helvetica Neue;
+    font-size: 1.5em;
+    font-weight: 500;
+    white-space: nowrap;
+    background-color: $background-color;
+    padding: .4em 1em;
+    margin-bottom: 1.5em;
+    border: .12em solid $primary-color; 
+    border-radius: 5em; 
+    color: $primary-color;
+    text-decoration: none;
+    transform: translateY(0em);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    
+        &:hover{
+            transform: translateY(-.7em);
+            background-color: $primary-color;
+
+            a {
+                color: $background-color;
+            }
+        }
+}

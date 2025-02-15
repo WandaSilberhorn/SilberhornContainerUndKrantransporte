@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="dist/main.css">
+    <title>Frischwassertank Mieten</title>
+</head>
+<body data-page="frischwassertank">
+    <div id="header-placeholder"></div>
+    <div class="inhalt">
+        <h2>Frischwassertank mieten</h2>
+        <p>Unsere Frischwassertanks mit einem Fassungsvermögen von ca. 13.000 Litern bieten eine zuverlässige 
+            Lösung für die Wasserversorgung überall dort, wo kein fester Wasseranschluss vorhanden oder 
+            unzureichend ist – ideal für Messen, Freizeitveranstaltungen oder zur Wasserdruckerhöhung.
+            Mit unseren Frischwassertanks sichern Sie sich eine mobile und hygienische Wasserversorgung 
+            in Trinkwasserqualität – flexibel und zuverlässig.
+        </p>
+
+        <!-- Popup Bilderansicht -->
+        <div id="modal">  
+            <div class="modal-bilderkarussel">
+                <img src="assets/icons/close.svg" alt="close" class="close">
+                <div class="modal-slider">
+                <img src="assets/bilder/beispiel.jpg" alt="beispiel" class="modal-slide active">
+                <img src="assets/bilder/beispiel2.jpg" alt="beispiel" class="modal-slide">
+                <img src="assets/bilder/beispiel3.jpg" alt="beispiel" class="modal-slide">
+                </div>
+                <div class="modal-buttons">
+                    <button class="modal-btn active" data-index="0"></button>
+                    <button class="modal-btn" data-index="1"></button>
+                    <button class="modal-btn" data-index="2"></button>
+                </div>
+            </div>
+        </div> 
+
+    <section id="frischwassertank" class="section">
+        <div class="produkt frischwassertank">
+            <div class="bilderkarussel">
+                <div class="slider">
+                <img src="assets/bilder/Containerfoto 008.JPG" alt="beispiel" class="slide active">
+                <img src="assets/bilder/Containerfoto 002.JPG" alt="beispiel" class="slide">
+                <img src="assets/bilder/Buerocontainer - 2.jpg" alt="beispiel" class="slide">
+                </div>
+                <div class="buttons">
+                    <button class="btn active" data-index="0"></button>
+                    <button class="btn" data-index="1"></button>
+                    <button class="btn" data-index="2"></button>
+                </div>
+            </div>
+
+            <div class="text">
+                <h3>Ihre Versorgung – im Detail:</h3>
+                <a href="assets/datenblatt/Datenblatt zum Download.pdf" download="container1.pdf"> <img src="assets/icons/file.svg" alt="file" class="file"></a>
+                <h4>Ausstattung: </h4>
+                <ul>
+                    <li>Fassungsvermögen: 13.000 Liter</li>
+                    <li>Hochwertiger Edelstahltank mit vollständiger Kälteisolierung</li>
+                    <li>Alle wasserführenden Teile und Pumpen aus Edelstahl</li>
+                    <li>Automatische Wasserstandregulierung für eine gleichmäßige Versorgung</li>
+
+                </ul>
+                <h4>Unsere Leistungen:</h4> 
+                <ul>
+                    <li>An- und Abtransport</li>
+                    <li>Fachgerechter Auf- und Abbau</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+        <button class="angebot">
+            <a href="contact.html" data-page="contact">Angebot einholen</a>
+        </button>
+    </div>
+
+    <div id="footer-placeholder"></div>
+</body>
+</html>

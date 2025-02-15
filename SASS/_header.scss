@@ -1,0 +1,218 @@
+@use 'global' as *;
+
+
+header {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    #logo-part {
+        display: flex;
+        background-color: $primary-color;
+        align-items: center;
+
+        .logo {
+            width: 18%;
+            margin-left: 2em
+          }
+
+        #iconContainer {
+            position: absolute;
+            right: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            --scale-factor: 0.8; /* Steuerbare Skalierung aller Logos */
+
+
+            .iconWrapper{
+                height: 3.5em;
+                border: none;
+                padding-right: 0;
+                display: flex;
+                transition: padding .5s ease-in-out;
+
+                /* Gleitet durch Padding-Anpassung */
+                justify-content: start;
+                align-items: center;
+
+                .icon {
+                    width: 5em;
+                    position: relative;
+                    transform: translateX(-5%) scale(var(--scale-factor)); 
+    
+                    .mailOpen{
+                        display: none;
+                        background-color: $primary-color;
+                        padding-right: 5%;
+                        padding-bottom: 1%;
+                        margin-bottom: 1.3em;
+                    }
+    
+                    .mailClosed{
+                        display: block;
+                    }
+    
+                    .phone{
+                        width: 3em;
+                        display: block;
+                    }
+    
+                    .phoneDark{
+                        width:2.4em;
+                        display: none;
+                        margin-bottom: .3em;
+                        margin-left: .8em;
+                    }
+                }
+    
+                .icon-text{
+                    display: none;
+                    padding: 0;
+                    margin: 0;
+                    font-weight: 700;
+                    width: 0;
+                    padding-left: 1em;
+                    color: $primary-color;
+                    text-decoration: none;
+                    opacity: 0; /* Unsichtbar zu Beginn */
+                    border-radius: 5px;
+                    white-space: nowrap; /* Text bleibt in einer Zeile */
+                    transition: opacity 0.5s ease, color 0.5s ease, width 0.5s ease;
+                    //visibility: hidden;
+
+                    .number {
+                        text-decoration: none;
+                        color: $primary-color;
+                        &:hover{
+                            //color: rgb(5, 1, 255);
+                            font-style: italic;
+                        }
+                    }
+                }
+
+                &:hover {
+                    padding-right: 10em; /* Verschiebt den Inhalt nach links */
+                    border: .25rem solid transparent; 
+                    background-color: white;
+                    border-radius: 5em; 
+
+                    .icon{
+                        transform: translateX(-5%);
+
+                            .phoneDark{
+                                display: block;
+                                background-color: transparent;
+                            }
+
+                            .mailOpen{
+                                display: block;
+                            }
+        
+                            .mailClosed{
+                                display: none;
+                            }
+        
+                            .phone{
+                                display: none;
+                            }
+        
+                    }
+
+                    .icon-text{
+                        width: 1em;
+                        opacity: 1; /* Sichtbar */
+                        display: block;
+                        //visibility: visible;
+                        transition-delay: 0.3s;
+                    }
+                }
+
+            }
+                
+        }
+        
+
+    }
+    
+    .main-navigation {
+        background-color: $background-color;     
+
+        ul {
+            padding: 1em 5%;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1em;
+            font-weight: 500;
+        
+            a {
+                font-size: 1.5em;
+                white-space: nowrap;
+                align-self: center;
+                padding: .4em 1em;
+                border: .2vw solid transparent; 
+                border-radius: 5em; 
+                transition: border-color 0.3s ease, background-color 0.3s ease;
+                color: $primary-color;
+
+                    &:hover, &:focus {
+                        border-color: $primary-color;
+                        background-color: $background-color;
+                        outline: none;
+                    }
+
+                    &.active {
+                        background-color: $primary-color;
+                        color: $background-color;
+                    }
+                
+            }
+        }
+    }
+
+} 
+
+.linie {
+    border: none;
+    height: .23vw;
+    background-color: $primary-color;
+}  
+
+
+.hovermenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 112%;
+    left: 20%;
+    width: 10vw;
+    background-color: white;
+    border: 0.2vw solid $primary-color !important;
+    border-radius: 1.4em;
+    padding: 0.5em 1em;
+    transition: opacity 0.3s ease !important;
+    text-align: center;
+}
+
+li {
+    position: relative;
+}
+
+li:hover .hovermenu {
+    visibility: visible;
+    opacity: 1 ;
+    border: 0.2vw solid $primary-color !important;
+    background-color: white !important;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: $primary-color !important;
+}
+
+
+
+

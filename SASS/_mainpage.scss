@@ -1,0 +1,195 @@
+@use 'global' as *;
+
+body[data-page="home"], body[data-page="krantransporte"]{
+    overflow-x: hidden;
+    overflow-y: scroll; 
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.startSlider{
+    overflow: hidden;
+    width: 100vw;
+    height: 82vh;
+}
+.slides{
+    position: relative;
+    display: flex;
+    width: 300vw;
+    height: 82vh;
+    left:0;
+    transition: transform 1s ease-in-out;
+
+    .startSlide{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }  
+}
+
+
+.partner {
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+
+    .welcometext{
+        margin-top: 3vw;;
+        //max-width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+       h2 {
+        text-align: center;
+        margin-bottom: .2em;
+       }
+
+       .bildtext{
+            display: flex;
+            //justify-content:stretch;
+            width: 80vw;
+            padding-top: 1vw;
+            margin-left: 1.5vw;
+            margin-bottom: 3vw;
+
+            .kartencontainer{
+                position: relative;
+                width: 15vw;
+                margin-right: 5vw;
+
+                .karte{
+                    position: absolute;
+                    width: 100%;
+                    transform: translateY(-22%);
+                    opacity: 1;
+                    transition: all .3s ease;
+                }
+                .karte.dunkel {
+                    opacity: 1;
+                }
+                
+                .karte.hell {
+                    opacity: 0;
+                }
+                p{
+                    color: rgb(0, 60, 255);
+                    position: absolute;
+                    width: 100%;
+                    left: 3vw;
+                    top: 1vw;
+                    font-size: 1.3vw;
+                    font-weight: 700;
+                    opacity: 0;
+                    transform: translateY(-1vw);
+                    transition: all .5s ease-in-out;
+                }
+                .kreis{
+                    position: absolute;
+                    left: 10vw;
+                    top: 10.5vw;
+                    width: .8vw;
+                    height: .8vw;
+                    background-color: rgb(255, 255, 255);
+                    border-radius: 50%;
+                    opacity: 0;
+                    transform: translateY(-3vw);
+                    transition: opacity .6s ease-in, transform .6s ease-in;;
+                }
+
+                &:hover .dunkel{
+                    opacity: 0;
+                }
+                &:hover .hell{
+                    opacity: 1;
+                }
+
+                &:not(:hover) .dunkel {
+                    transition: opacity 0s ease-out;
+                }
+                &:not(:hover) .hell {
+                    transition: opacity 0s ease-out;
+                }
+
+                &:hover p, &:hover .kreis{
+                    opacity: 1;
+                    transform: translateY(0vw);
+                }
+                &:not(:hover) .kreis, &:not(:hover) p {
+                    transition: opacity 0s ease-out;
+                }
+            }
+
+            p { 
+                align-self: flex-start;
+                margin-top: 1vw;
+            }
+       }
+        
+       }
+}
+
+.icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100vw;
+        margin-top: 3vw;
+
+        p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 12vw;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .icon{
+            padding-bottom: 1vw;;
+            width: 5vw;
+        }
+      
+    }
+.referenzen {
+    margin-top: 7vw;
+    margin-bottom: 10vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .eintraege{
+        margin-top: 1vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .eintrag {
+            margin-bottom: 5vw;
+            width: 20vw;
+            flex: 50%;
+            
+            img{
+                width: 36vw;
+            }
+
+            h3{
+                padding-top: 1vw;
+            }
+            p {
+                padding-top: .3vw;;
+                width: 80%;
+                //font-weight: 500;
+            }
+        }
+    }
+} 
+
+#referenzen{
+    scroll-margin-top: 18vw;
+}

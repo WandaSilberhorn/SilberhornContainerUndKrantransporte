@@ -1,6 +1,6 @@
 //Header und Footer ins DOM einfügen
 export function loadHeaderAndFooter() {
-    fetch("/header.html")
+    fetch("./header.html")
         .then(response => response.text())
         .then(data => {
             document.querySelector("#header-placeholder").innerHTML = data;
@@ -8,7 +8,7 @@ export function loadHeaderAndFooter() {
         })
         .catch(err => console.error("Fehler beim Laden des Headers:", err));
 
-    fetch("/footer.html")
+    fetch("./footer.html")
         .then(response => response.text())
         .then(data => {
             document.querySelector("#footer-placeholder").innerHTML = data;
